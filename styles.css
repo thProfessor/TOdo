@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=M+PLUS+1+Code:wght@300;700&family=Roboto:wght@400;700;900&display=swap");
+
+:root {
+  --dark: black;
+  --light: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+input:not([type="checkbox"]):not([type="radio"]) {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+body {
+  background: yellow;
+  color: white;
+}
+
+section {
+  margin: 2rem 1.5rem;
+}
+
+h3 {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail .title {
+  display: flex;
+}
+
+.title input {
+  margin-left: 1rem;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.create-todo input[type="text"] {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  color: black;
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.create-todo input[type="submit"] {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  color: white;
+  background: tomato;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.create-todo input[type="submit"]:hover {
+  opacity: 0.75;
+}
+.todo-list .list {
+  margin: 1rem 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.todo-item label {
+  display: block;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.todo-item .content {
+  flex: 1 1 0%;
+}
+.todo-item input[type="text"] {
+  font-size: 1.125rem;
+  color: black;
+}
+.actions {
+  display: flex;
+  align-items: center;
+}
+.actions button {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: white;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  opacity: 0.75;
+}
+
+.edit {
+  background-color: yellow;
+  margin-right: 0.5rem;
+}
+
+.delete {
+  background-color: red;
+}
+
+.todo-done .todo-item .content input {
+  text-decoration: line-through;
+  color: grey;
+}
